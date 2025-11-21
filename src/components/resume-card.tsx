@@ -29,6 +29,7 @@ interface ResumeCardProps {
     context: string;
     objectives: readonly string[];
     results: string;
+    technologies: readonly string[];
   }[];
 }
 export const ResumeCard = ({

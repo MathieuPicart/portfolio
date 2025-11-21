@@ -141,8 +141,22 @@ export const DATA = {
       logoUrl: "/grp-thomas-plants.png",
       start: "Avril 2023",
       end: "Juillet 2023",
-      description:
-        "Développement d’une application web de gestion et de suivi de la production avec cahier des charges, maquette, conception et implémentation en React.js / Express.js, puis déploiement sur serveur Linux Debian.",
+      missions: [
+        {
+          title: "Développement Application Web de Gestion de Production",
+          start: "Avril 2023",
+          end: "Juillet 2023",
+          technologies: ["React.js", "Express.js", "Linux", "Debian"],
+          description: "Conception et développement d'une application web pour la gestion et le suivi de la production.",
+          context: "Stage de fin d'études",
+          objectives: [
+            "Rédaction du cahier des charges et réalisation des maquettes.",
+            "Conception et implémentation de l'application en React.js et Express.js.",
+            "Déploiement de la solution sur un serveur Linux Debian."
+          ],
+          results: "Application fonctionnelle et déployée en production."
+        }
+      ],
     },
     {
       company: "IUT de Lannion",
@@ -153,8 +167,22 @@ export const DATA = {
       logoUrl: "/IUT_Lannion.png",
       start: "Mai 2020",
       end: "Juillet 2020",
-      description:
-        "Développement d’un jeu multiplateforme (Android, iOS et Desktop) avec ReactJS, TypeScript, Ionic et Capacitor, intégrant une base de données PostgreSQL et la gestion des états via Redux.",
+      missions: [
+        {
+          title: "Développement d’un jeu multiplateforme (Android, iOS et Desktop)",
+          start: "Mai 2020",
+          end: "Juillet 2020",
+          technologies: ["ReactJS", "TypeScript", "Ionic", "Capacitor", "PostgreSQL", "Redux"],
+          description: "Développement d’un jeu multiplateforme (Android, iOS et Desktop) avec ReactJS, TypeScript, Ionic et Capacitor, intégrant une base de données PostgreSQL et la gestion des états via Redux.",
+          context: "Stage de fin d'études",
+          objectives: [
+            "Conception et développement d’un jeu multiplateforme (Android, iOS et Desktop) avec ReactJS, TypeScript, Ionic et Capacitor, intégrant une base de données PostgreSQL et la gestion des états via Redux.",
+            "Conception et implémentation de l'application en React.js et Express.js.",
+            "Déploiement de la solution sur un serveur Linux Debian."
+          ],
+          results: "Application fonctionnelle et déployée en production."
+        }
+      ],
     },
   ],
   education: [
