@@ -1,5 +1,7 @@
 # Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88914641-c643-4ea5-86b1-d02111db73c9/deploy-status)](https://app.netlify.com/projects/mathieupicart/deploys)
+
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
 # Features

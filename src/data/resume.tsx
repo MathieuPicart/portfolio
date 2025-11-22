@@ -103,12 +103,12 @@ export const DATA = {
           results: "Acquisition de solides compétences sur Laravel et développement des premiers modules, malgré l’arrêt du projet lié à des contraintes techniques."
         },
         {
-          title: "Developpement Outils Internes - Développement Symfony",
+          title: "Développement Outils Internes",
           start: "Septembre 2021",
           end: "Mai 2023",
           technologies: ["Symfony", "Twig", "MySQL"],
           description: "Conception et développement d’outils internes destinés à simplifier les processus métiers et améliorer la productivité.",
-          context: "Projet mené au sein d’une équipe pluridisciplinaire IT, avec échanges réguliers avec les équipes métiers.",
+          context: "Projet mené au sein d’une équipe pluridisciplinaire, avec des échanges réguliers avec les équipes métiers.",
           objectives: [
             "Développement d’un gestionnaire de tickets et d’une plateforme de support.",
             "Conception et maintenance d’applications web avec des composants Symfony.",
@@ -143,7 +143,7 @@ export const DATA = {
       end: "Juillet 2023",
       missions: [
         {
-          title: "Développement Application Web de Gestion de Production",
+          title: "Développement Application Web",
           start: "Avril 2023",
           end: "Juillet 2023",
           technologies: ["React.js", "Express.js", "Linux", "Debian"],
@@ -169,7 +169,7 @@ export const DATA = {
       end: "Juillet 2020",
       missions: [
         {
-          title: "Développement d’un jeu multiplateforme (Android, iOS et Desktop)",
+          title: "Développement d’un jeu multiplateforme",
           start: "Mai 2020",
           end: "Juillet 2020",
           technologies: ["ReactJS", "TypeScript", "Ionic", "Capacitor", "PostgreSQL", "Redux"],

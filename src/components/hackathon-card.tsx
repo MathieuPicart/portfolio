@@ -35,18 +35,18 @@ export function HackathonCard({
         </Avatar>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
-        {win && (
-          <Badge key={"win"} title={"win"} className="absolute top-2 right-2 max-w-32 bg-green-500 rounded-full text-center">
-            <Image className="" src="/victory-medal.svg" alt="Victory Medal" width={24} height={24} />
-            {win}
-          </Badge>
-        )}
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>
+        )}
+        {win && (
+          <Badge key={"win"} title={"win"} className="sm:absolute top-2 right-2 max-w-32 bg-green-500 rounded-full text-center">
+            <Image className="" src="/victory-medal.svg" alt="Victory Medal" width={24} height={24} />
+            {win}
+          </Badge>
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">

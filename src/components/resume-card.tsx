@@ -25,11 +25,11 @@ interface ResumeCardProps {
     title: string;
     start: string;
     end: string;
+    technologies: readonly string[];
     description: string;
     context: string;
     objectives: readonly string[];
     results: string;
-    technologies: readonly string[];
   }[];
 }
 export const ResumeCard = ({
@@ -46,7 +46,7 @@ export const ResumeCard = ({
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description || missions) {
+    if (missions) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
     }
@@ -116,13 +116,13 @@ export const ResumeCard = ({
             {missions && missions.length > 0 ? (
               missions.map((mission, index) => (
                 <div key={index} className="flex-grow items-center flex-col group my-4">
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h2 className="inline-flex items-center justify-center font-semibold leading-none text-xl sm:text-sm">{mission.title}</h2>
+                  <div className="flex items-center justify-between gap-x-2">
+                    <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm py-1">{mission.title}</h3>
                     <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                       {`${mission.start} - ${mission.end ?? "Present"}`}
                     </div>
                   </div>
-                  <div className="flex gap-2 mt-2">
+                  <div className="flex flex-wrap gap-2 mt-2">
                     {mission.technologies.map((technologie) => (
                       <BlurFade
                         key={technologie}
@@ -134,11 +134,11 @@ export const ResumeCard = ({
                   </div>
                   <div>
                     <strong>Description: </strong>
-                    {mission.description}
+                    <p className="text-xs sm:text-sm">{mission.description}</p>
                   </div>
                   <div>
                     <strong>Contexte: </strong>
-                    {mission.context}
+                    <p className="text-xs sm:text-sm">{mission.context}</p>
                   </div>
                   <div>
                     <strong>Misssions clés: </strong>
@@ -147,13 +147,13 @@ export const ResumeCard = ({
                         <li key={i} className="list-disc">{objective}</li>
                       ))}
                     </ul>
-
                   </div>
-                  <div><strong>Résultat: </strong>{mission.results}</div>
+                  <div>
+                    <strong>Résultat: </strong>
+                    <p className="text-xs sm:text-sm">{mission.results}</p>
+                  </div>
                 </div>
               ))
-            ) : description ? (
-              <div>{description}</div>
             ) : null}
           </motion.div>
         </div>
