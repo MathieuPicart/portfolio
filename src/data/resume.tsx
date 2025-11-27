@@ -8,9 +8,11 @@ export const DATA = {
   location: "Rennes, Bretagne",
   locationLink: "https://www.google.com/maps/place/rennes",
   description:
-    "26 ans, passionné par l’algorithmie et la programmation web, je suis à la recherche d'une opportunité stimulante.",
+    "26 ans, passionné par l’algorithmie et le développement web, je suis à la recherche d’une opportunité où je pourrai relever de nouveaux défis techniques et évoluer au sein d’une équipe.",
   summary:
-    "Fort de plusieurs années d'expérience en développement web Full Stack, je maîtrise les technologies modernes telles que React, Next.js et TypeScript, ainsi que les frameworks backend comme Laravel et Symfony. Passionné par l'algorithmie et la résolution de problèmes complexes, je m'efforce de créer des applications robustes et évolutives. Mon parcours m'a permis de développer une polyvalence technique et une capacité d'adaptation rapide. Aujourd'hui, je recherche une opportunité stimulante où je pourrai mettre à profit mes compétences pour contribuer à des projets ambitieux.",
+    `Curieux et rigoureux, j’aime comprendre ce qui se cache derrière un problème technique et concevoir des solutions efficaces et durables.
+    J’ai développé de l’expérience sur des frameworks tels que React et Next.js, en utilisant TypeScript ou JavaScript, toujours avec le souci d’écrire un code propre et maintenable.
+    Aujourd’hui, je recherche un environnement stimulant où je pourrai continuer à progresser, contribuer à des projets concrets et mettre mon expertise au service d’objectifs ambitieux.`,
   avatarUrl: "/me.png",
   skills: {
     "Frontend": [
@@ -20,6 +22,7 @@ export const DATA = {
       "Javascript",
       "HTML",
       "CSS",
+      "SCSS",
     ],
     "Backend": [
       "Node.js",
@@ -34,17 +37,17 @@ export const DATA = {
       "PostgreSQL",
       "MySQL",
       "MongoDB",
-      "Redis",
-      "Supabase",
-      "Firebase",
+      "PHPMyAdmin",
     ],
     "Outils": [
-      "Docker",
       "Git",
-      "GitLab",
-      "GitHub",
-      "Postman",
-      "Vercel",
+      "GitLab CI/CD",
+      "Postman / Bruno",
+      "Docker",
+      "Cursor / Antigravity",
+      "PostHog",
+      "Figma",
+      "CodeRabbit",
     ],
   },
   navbar: [
@@ -214,7 +217,7 @@ export const DATA = {
   projects: [
     {
       title: "DevEvents",
-      href: "https://magicui.design",
+      href: "https://mpdevevents.netlify.app/",
       dates: "Novembre 2025",
       active: true,
       description:
@@ -232,7 +235,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://mathieupicart.fr/devevents",
+          href: "https://mpdevevents.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -241,8 +244,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/dev_events.png",
+      video: "",
     },
   ],
   hackathons: [

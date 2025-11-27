@@ -119,7 +119,8 @@ export const ResumeCard = ({
                   <div className="flex items-center justify-between gap-x-2">
                     <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm py-1">{mission.title}</h3>
                     <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-                      {`${mission.start} - ${mission.end ?? "Present"}`}
+                      {/* If there is only one mission, don't display the date */}
+                      {missions.length === 1 ? "" : `${mission.start} - ${mission.end ?? "Present"}`}
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-2">
