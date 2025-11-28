@@ -75,8 +75,8 @@ export const DATA = {
       },
       CV: {
         name: "CV",
-        url: "/cv.pdf",
-        icon: Icons.cv2,
+        url: "/cv_fullstack.pdf",
+        icon: Icons.cv,
         navbar: true,
       },
     },
