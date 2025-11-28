@@ -60,7 +60,7 @@ export const ResumeCard = ({
     >
       <Card className="flex">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground p-2">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -73,7 +73,7 @@ export const ResumeCard = ({
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                {title}
+                <p className="text-xs sm:text-sm pr-2">{title}</p>
                 {badges && (
                   <span className="inline-flex gap-x-1">
                     {badges.map((badge, index) => (

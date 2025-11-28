@@ -8,11 +8,9 @@ export const DATA = {
   location: "Rennes, Bretagne",
   locationLink: "https://www.google.com/maps/place/rennes",
   description:
-    "26 ans, passionné par l’algorithmie et le développement web, je suis à la recherche d’une opportunité où je pourrai relever de nouveaux défis techniques et évoluer au sein d’une équipe.",
+    "Passionné par le développement web et les défis techniques, j’aime concevoir des solutions efficaces et durables. Aujourd’hui, je souhaite rejoindre une équipe où je pourrai contribuer à des projets concrets, continuer à progresser et apporter une réelle valeur technique.",
   summary:
-    `Curieux et rigoureux, j’aime comprendre ce qui se cache derrière un problème technique et concevoir des solutions efficaces et durables.
-    J’ai développé de l’expérience sur des frameworks tels que React et Next.js, en utilisant TypeScript ou JavaScript, toujours avec le souci d’écrire un code propre et maintenable.
-    Aujourd’hui, je recherche un environnement stimulant où je pourrai continuer à progresser, contribuer à des projets concrets et mettre mon expertise au service d’objectifs ambitieux.`,
+    `J’aime comprendre ce qui se cache derrière un besoin pour y apporter une solution fiable et maintenable. J’ai développé de l’expérience sur React, Next.js, Express et TypeScript, avec une attention constante portée à la qualité du code. Aujourd’hui, je recherche un environnement stimulant où je pourrai progresser, collaborer et contribuer à des projets à forte valeur ajoutée.`,
   avatarUrl: "/me.png",
   skills: {
     "Frontend": [
@@ -61,21 +59,24 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/MathieuPicart",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/mathieu-picart/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       Email: {
         name: "Send Email",
         url: "mailto:picartmathieu@outlook.fr",
         icon: Icons.email,
-
+        navbar: true,
+      },
+      CV: {
+        name: "CV",
+        url: "/cv.pdf",
+        icon: Icons.cv2,
         navbar: true,
       },
     },
@@ -84,7 +85,7 @@ export const DATA = {
     {
       company: "Crédit Agricole",
       href: "https://www.credit-agricole.fr/ca-corse/particulier.html",
-      badges: [],
+      badges: ["Alterance"],
       location: "Ajaccio, Corse",
       title: "Développeur Web Full Stack",
       logoUrl: "/ca.png",
@@ -95,7 +96,7 @@ export const DATA = {
           title: "Migration Technologique Symfony vers Laravel",
           start: "Mai 2023",
           end: "Octobre 2023",
-          technologies: ["Laravel", "MySQL"],
+          technologies: ["Symfony", "Laravel", "MySQL"],
           description: "Refonte des applications internes existantes pour améliorer leur maintenabilité et leurs performances.",
           context: "Migration progressive des applications historiques Symfony vers Laravel, afin d’aligner l’écosystème technique sur les standards actuels.",
           objectives: [
@@ -137,7 +138,7 @@ export const DATA = {
     },
     {
       company: "Groupe Thomas Plants",
-      badges: [],
+      badges: ["Stage"],
       href: "https://www.groupethomasplants.com/",
       location: "Ploubazlanec",
       title: "Développeur Web Full Stack",
@@ -150,21 +151,22 @@ export const DATA = {
           start: "Avril 2023",
           end: "Juillet 2023",
           technologies: ["React.js", "Express.js", "Linux", "Debian"],
-          description: "Conception et développement d'une application web pour la gestion et le suivi de la production.",
-          context: "Stage de fin d'études",
+          description: "Réalisation d’une application web destinée à améliorer le suivi de production au sein de l’entreprise.",
+          context: "Stage de fin d’études réalisé en autonomie, avec un échange régulier avec les équipes métiers. Le projet a évolué au fil des besoins, ce qui a impliqué plusieurs ajustements techniques et organisationnels.",
           objectives: [
-            "Rédaction du cahier des charges et réalisation des maquettes.",
-            "Conception et implémentation de l'application en React.js et Express.js.",
-            "Déploiement de la solution sur un serveur Linux Debian."
+            "Analyse du besoin et rédaction du cahier des charges.",
+            "Conception des maquettes et de l’architecture technique.",
+            "Développement de l’application avec React.js et Express.js.",
+            "Déploiement d’une première version sur un serveur Linux Debian."
           ],
-          results: "Application fonctionnelle et déployée en production."
+          results: "Une première version fonctionnelle de l’application a été déployée. Bien qu’incomplète par manque de temps, elle a servi de base à l’entreprise pour envisager la suite du développement."
         }
       ],
     },
     {
       company: "IUT de Lannion",
       href: "https://iut-lannion.univ-rennes.fr/",
-      badges: [],
+      badges: ["Stage"],
       location: "Lannion, Bretagne",
       title: "Développeur Web",
       logoUrl: "/IUT_Lannion.png",
@@ -176,14 +178,15 @@ export const DATA = {
           start: "Mai 2020",
           end: "Juillet 2020",
           technologies: ["ReactJS", "TypeScript", "Ionic", "Capacitor", "PostgreSQL", "Redux"],
-          description: "Développement d’un jeu multiplateforme (Android, iOS et Desktop) avec ReactJS, TypeScript, Ionic et Capacitor, intégrant une base de données PostgreSQL et la gestion des états via Redux.",
-          context: "Stage de fin d'études",
+          description: "Participation au développement d’un jeu web et mobile au sein d’un groupe de travail, avec un objectif d’architecture multiplateforme et moderne.",
+          context: "Stage de fin d’études réalisé en groupe, durant la période de la pandémie de Covid-19. Le contexte sanitaire a complexifié la coordination et le travail en équipe, mais nous avons poursuivi le développement en avançant le projet le plus loin possible.",
           objectives: [
-            "Conception et développement d’un jeu multiplateforme (Android, iOS et Desktop) avec ReactJS, TypeScript, Ionic et Capacitor, intégrant une base de données PostgreSQL et la gestion des états via Redux.",
-            "Conception et implémentation de l'application en React.js et Express.js.",
-            "Déploiement de la solution sur un serveur Linux Debian."
+            "Conception de l’architecture et des interfaces du jeu.",
+            "Développement du front-end avec ReactJS, TypeScript, Ionic et Capacitor.",
+            "Intégration d’une base de données PostgreSQL et gestion des états avec Redux.",
+            "Travail collaboratif et coordination à distance durant la pandémie de Covid-19."
           ],
-          results: "Application fonctionnelle et déployée en production."
+          results: "Le jeu n’a pas pu être déployé, mais une version fonctionnelle en phase avancée de développement a été livrée. Le stage a été l’occasion de découvrir le travail collaboratif à distance et de consolider mes compétences sur les technologies web et mobiles hybrides."
         }
       ],
     },
