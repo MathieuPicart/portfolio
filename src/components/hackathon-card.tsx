@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
+import { FirstPlaceBadge } from "./ui/first-place-badge";
 
 interface Props {
   title: string;
@@ -43,10 +44,7 @@ export function HackathonCard({
           <p className="text-sm text-muted-foreground">{location}</p>
         )}
         {win && (
-          <Badge key={"win"} title={"win"} className="sm:absolute top-2 right-2 max-w-32 bg-green-500 rounded-full text-center">
-            <Image className="" src="/victory-medal.svg" alt="Victory Medal" width={24} height={24} />
-            {win}
-          </Badge>
+          <FirstPlaceBadge className="sm:absolute top-2 right-2 max-w-32" />
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">

@@ -16,6 +16,7 @@ interface BlurFadeTextProps {
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
+  helloAnimation?: boolean;
 }
 const BlurFadeText = ({
   text,
@@ -25,6 +26,7 @@ const BlurFadeText = ({
   delay = 0,
   yOffset = 8,
   animateByCharacter = false,
+  helloAnimation = false
 }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
@@ -55,6 +57,30 @@ const BlurFadeText = ({
               {char}
             </motion.span>
           ))}
+        </AnimatePresence>
+      </div>
+    );
+  }
+
+  if (helloAnimation) {
+    return (
+      <div className="flex">
+        <AnimatePresence>
+          <motion.span
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={combinedVariants}
+            transition={{
+              yoyo: Infinity,
+              delay,
+              ease: "easeOut",
+            }}
+            className={cn("inline-block", className)}
+          >
+            {text}
+            <span className="wave">👋</span>
+          </motion.span>
         </AnimatePresence>
       </div>
     );
