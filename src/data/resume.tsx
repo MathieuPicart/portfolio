@@ -250,6 +250,36 @@ export const DATA = {
       image: "/dev_events.png",
       video: "",
     },
+    {
+      title: "GSAP Crash Course",
+      href: "https://gsap-crash-course.netlify.app/",
+      dates: "Novembre 2025",
+      active: true,
+      description:
+        "Projet de démonstration des techniques avancées d'animation GSAP dans React. Présente des animations déclenchées par le scroll, des effets de découpage de texte, et des composants interactifs avec des animations fluides et professionnelles.",
+      technologies: [
+        "React",
+        "GSAP",
+        "Vite",
+        "TailwindCSS",
+        "ScrollTrigger",
+        "SplitText",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://gsap-crash-course.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/MathieuPicart/gsap_crash_course",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/gsap_crash_course.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
